@@ -12,10 +12,10 @@ import { Icon } from "@iconify/react";
 import GradientText from "@/blocks/TextAnimations/GradientText/GradientText";
 
 const CATEGORY_STYLES = {
-  ACCOMMODATION: { color: "#5C0087", name: "Alojamiento", action: "Reserva" },
-  ACTIVITY: { color: "#FF8000", name: "Actividad", action: "Vive" },
-  F_AND_B: { color: "#B40078", name: "Restaurante", action: "Ordena" },
-  TRANSPORT: { color: "#2E005D", name: "Transporte", action: "Viaja" },
+  ACCOMMODATION: { color: "#5C0087", name: "Acomodação", action: "Reserva" },
+  ACTIVITY: { color: "#FF8000", name: "Atividade", action: "Viva" },
+  F_AND_B: { color: "#B40078", name: "Restaurante", action: "Peça" },
+  TRANSPORT: { color: "#2E005D", name: "Transporte", action: "Viaje" },
 };
 
 const styles = `
@@ -53,50 +53,50 @@ export const PricingTiers: React.FC = () => {
 
   const tiers: PricingTier[] = [
     {
-      name: "Alojamientos (hasta 20 habitaciones)",
+      name: "Acomodações (até 20 quartos)",
       originalPrice: 70.0,
       discountedPrice: 50.0,
       description:
-        "Ideal para posadas o alojamientos pequeños que buscan más visibilidad y gestión inteligente.",
+        "Ideal para pousadas ou acomodações pequenas que buscam mais visibilidade e gestão inteligente.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Soporte de IA 24/7",
-        "Gestión completa de perfil y reservas",
+        "1 mês de teste grátis",
+        "20% de desconto na assinatura anual",
+        "Certificação de serviço Viaia",
+        "Suporte de IA 24/7",
+        "Gestão completa de perfil e reservas",
       ],
       icon: "lucide:home",
       category: "ACCOMMODATION",
     },
     {
-      name: "Alojamientos (más de 20 habitaciones)",
+      name: "Acomodações (mais de 20 quartos)",
       originalPrice: 100.0,
       discountedPrice: 80.0,
       description:
-        "Para hoteles o complejos turísticos con más demanda y necesidad de control avanzado.",
+        "Para hotéis ou complexos turísticos com maior demanda e necessidade de controle avançado.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Gestión de datos, disponibilidad y precios",
-        "Panel completo de reservas y clientes",
-        "Certificación de servicio Viaia",
+        "1 mês de teste grátis",
+        "20% de desconto na assinatura anual",
+        "Gestão de dados, disponibilidade e preços",
+        "Painel completo de reservas e clientes",
+        "Certificação de serviço Viaia",
       ],
       icon: "lucide:building",
       category: "ACCOMMODATION",
       isPopular: true,
     },
     {
-      name: "Actividades turísticas",
+      name: "Atividades turísticas",
       originalPrice: 70.0,
       discountedPrice: 50.0,
       description:
-        "Perfecto para operadores, guías y experiencias locales que quieren conectar con más viajeros.",
+        "Perfeito para operadores, guias e experiências locais que desejam conectar-se com mais viajantes.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Gestión de reservas y disponibilidad",
-        "Integración con atención automática por chat",
+        "1 mês de teste grátis",
+        "20% de desconto na assinatura anual",
+        "Certificação de serviço Viaia",
+        "Gestão de reservas e disponibilidade",
+        "Integração com atendimento automático por chat",
       ],
       icon: "lucide:compass",
       category: "ACTIVITY",
@@ -107,13 +107,13 @@ export const PricingTiers: React.FC = () => {
       originalPrice: 50.0,
       discountedPrice: 30.0,
       description:
-        "Pensado para restaurantes, cafés y bares que buscan atraer viajeros y mostrar su oferta.",
+        "Pensado para restaurantes, cafés e bares que buscam atrair viajantes e mostrar sua oferta.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Gestión de perfil y reseñas",
-        "Atención automatizada a consultas",
+        "1 mês de teste grátis",
+        "20% de desconto na assinatura anual",
+        "Certificação de serviço Viaia",
+        "Gestão de perfil e avaliações",
+        "Atendimento automatizado a consultas",
       ],
       icon: "lucide:utensils-crossed",
       category: "F_AND_B",
@@ -124,13 +124,13 @@ export const PricingTiers: React.FC = () => {
       originalPrice: 50.0,
       discountedPrice: 30.0,
       description:
-        "Ideal para servicios de traslado, tours sobre ruedas o transporte privado que deseen más reservas.",
+        "Ideal para serviços de traslado, passeios sobre rodas ou transporte privado que desejem mais reservas.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Gestión de perfil, rutas y disponibilidad",
-        "Atención automatizada a solicitudes de traslado",
+        "1 mês de teste grátis",
+        "20% de desconto na assinatura anual",
+        "Certificação de serviço Viaia",
+        "Gestão de perfil, rotas e disponibilidade",
+        "Atendimento automatizado a solicitações de traslado",
       ],
       icon: "lucide:bus",
       category: "TRANSPORT",
@@ -153,12 +153,12 @@ export const PricingTiers: React.FC = () => {
             className="font-black tracking-tight"
             colors={["#2E005D", "#5C0087", "#8A0087", "#FF6200", "#FF8000"]}
           >
-            Planes adaptados a tu servicio
+            Planos adaptados ao seu serviço
           </GradientText>
         </h2>
         <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-md mx-auto">
-          Viaia impulsa tu visibilidad, optimiza tu gestión y conecta tu
-          servicio con más exploradores.
+          Viaia impulsiona sua visibilidade, otimiza sua gestão e conecta seu
+          serviço com mais exploradores.
         </p>
       </div>
 
@@ -188,10 +188,10 @@ export const PricingTiers: React.FC = () => {
       {/* Toggle de precios mensual/anual */}
       <div className="flex justify-center items-center gap-4 mb-8">
         <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-          Mensual
+          Mensal
         </span>
         <Switch
-          aria-label="Cambiar a precios anuales"
+          aria-label="Alternar para preços anuais"
           color="default"
           isSelected={isAnnual}
           size="lg"
@@ -220,7 +220,7 @@ export const PricingTiers: React.FC = () => {
                     className="h-6 bg-[#007A8A] text-white border-2 border-white/50 shining-chip"
                     variant="shadow"
                   >
-                    Más popular
+                    Mais popular
                   </Chip>
                 </div>
               )}
@@ -246,7 +246,7 @@ export const PricingTiers: React.FC = () => {
                       : tier.originalPrice}
                   </span>
                   <span className="text-danger text-sm font-medium">
-                    /{isAnnual ? "año" : "mes"}
+                    /{isAnnual ? "ano" : "mês"}
                   </span>
                 </div>
 
@@ -254,14 +254,14 @@ export const PricingTiers: React.FC = () => {
                 {isAnnual ? (
                   <div className="mx-auto mb-4 text-center text-sm text-gray-700 dark:text-gray-300">
                     <div className="text-green-600 font-semibold">
-                      ¡Ahorras ${Math.round(tier.originalPrice * 12 * 0.2)} al
-                      año!
+                      Você economiza R${Math.round(tier.originalPrice * 12 * 0.2)} ao
+                      ano!
                     </div>
                   </div>
                 ) : (
                   <div className="mx-auto mb-4 text-center text-sm text-gray-700 dark:text-gray-300">
                     <div className="text-gray-500">
-                      Paga anualmente y ahorra 20%
+                      Pague anualmente e economize 20%
                     </div>
                   </div>
                 )}
@@ -288,10 +288,10 @@ export const PricingTiers: React.FC = () => {
           size="lg"
           onPress={() => (window.location.href = "https://wa.me/13075001620")}
         >
-          Contáctanos
+          Contate-nos
         </Button>
         <p className="text-sm text-gray-500 mt-4 max-w-xs">
-          Conversemos sobre tu servicio y personaliza tu plan con Viaia.
+          Vamos conversar sobre seu serviço e personalizar seu plano com a Viaia.
         </p>
       </div>
     </div>

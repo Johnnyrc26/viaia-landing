@@ -15,7 +15,7 @@ export default function DefaultLayout({
         <main className="pt-[64px]">{children}</main>
         <footer className="w-full bg-[#fcfcfc] dark:bg-[#1a1a1a] px-4 py-3 border-t border-gray-200 dark:border-gray-800">
           <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
-            {/* Botones de contacto */}
+            {/* Botões de contato */}
             <div className="flex items-center gap-4">
               <a
                 className="text-green-500 hover:text-green-700 text-3xl"
@@ -35,9 +35,9 @@ export default function DefaultLayout({
               </a>
             </div>
 
-            {/* Derechos reservados */}
+            {/* Todos os direitos reservados */}
             <div className="text-xs text-gray-500">
-              © 2025 <strong>Viaia LLC</strong>. Todos los derechos reservados.
+              © 2025 <strong>Viaia LLC</strong>. Todos os direitos reservados.
             </div>
           </div>
         </footer>

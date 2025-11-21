@@ -36,7 +36,7 @@ export default function NavBar() {
               }
             }}
           >
-            Ir a la App
+            Ir para o App
           </Button>
         </NavbarItem>
       </NavbarContent>

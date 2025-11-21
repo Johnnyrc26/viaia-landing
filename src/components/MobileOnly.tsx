@@ -46,7 +46,7 @@ export default function MobileOnly({
             colors={["#2E005D", "#5C0087", "#8A0087", "#FF6200", "#FF8000"]}
             showBorder={false}
           >
-            La primera IA de turismo en Venezuela
+            A primeira IA de turismo no Brasil
           </GradientText>
         </div>
         {/* Sección Dividida - Usa flex-1 para ocupar espacio disponible */}
@@ -63,11 +63,11 @@ export default function MobileOnly({
           {/* Columna derecha */}
           <div className="flex flex-col items-center w-full lg:w-1/2 text-center lg:text-left lg:items-start lg:pl-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">
-              Tu nueva compañera de viaje
+              Sua nova companheira de viagem
             </h2>
             <p className="text-gray-600 text-base sm:text-xl md:text-2xl lg:text-3xl dark:text-gray-400 mb-4 lg:mb-8">
-              Explora Venezuela con <strong>Viaia</strong>.<br /> Escanea el
-              código y atrévete a descubrir.
+              Explore o Brasil com <strong>Viaia</strong>.<br /> Escaneie o
+              código e ouse descobrir.
             </p>
             <div className="w-full flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 lg:gap-6">
               {/* Primer QR */}
@@ -80,7 +80,7 @@ export default function MobileOnly({
                   />
                 </div>
                 <p className="mt-2 text-center text-sm lg:text-base">
-                  Aplicación web
+                  Aplicativo web
                 </p>
                 <div className="w-24 h-6 mt-1">
                   <img
@@ -100,7 +100,7 @@ export default function MobileOnly({
                   />
                 </div>
                 <p className="mt-2 text-center text-sm lg:text-base">
-                  Descubre Viaia
+                  Descubra a Viaia
                 </p>
                 <div className="w-24 h-6 mt-1">
                   <img
@@ -123,7 +123,7 @@ export default function MobileOnly({
                 colors={["#2E005D", "#FF6200", "#5C0087", "#FF8000", "#8A0087"]}
                 showBorder={false}
               >
-                Probar Viaia ahora
+                Experimentar Viaia agora
               </GradientText>
               <p className="ml-2">✨</p>
             </a>

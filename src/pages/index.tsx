@@ -42,7 +42,7 @@ export default function IndexPage() {
                   <SplitText
                     className="text-5xl font-bold md:text-5xl lg:text-6xl"
                     delay={50}
-                    text="¡Hola, viajero!"
+                    text="Olá, viajante!"
                   />
                 </div>
 
@@ -60,7 +60,7 @@ export default function IndexPage() {
                       ]}
                       showBorder={false}
                     >
-                      Atrévete a descubrir como nunca antes.
+                      Ouse descobrir como nunca antes.
                     </GradientText>
                   </div>
 
@@ -82,7 +82,7 @@ export default function IndexPage() {
                         ]}
                         showBorder={false}
                       >
-                        Probar Viaia ahora
+                        Experimentar Viaia agora
                       </GradientText>
                       <p>✨</p>
                     </a>
@@ -99,7 +99,7 @@ export default function IndexPage() {
                         className="text-gray-800 font-semibold text-lg"
                         disabled={false}
                         speed={10}
-                        text="Próximamente"
+                        text="Em breve"
                       />
                     </Chip>
 
@@ -131,7 +131,7 @@ export default function IndexPage() {
                       <SplitText
                         className="text-3xl md:text-4xl lg:text-5xl max-w-3xl mx-auto"
                         delay={50}
-                        text="Explorar sin límites es el nuevo destino"
+                        text="Explorar sem limites é o novo destino"
                       />
                       <p className="text-4xl mt-4">🗺️</p>
                     </div>
@@ -154,32 +154,32 @@ export default function IndexPage() {
                     ]}
                     showBorder={false}
                   >
-                    Descubrir empieza con un mensaje
+                    Descobrir começa com uma mensagem
                   </GradientText>
                   <p>💬</p>
                 </div>
 
                 <div className="text-2xl md:text-3xl lg:text-4xl text-center max-w-3xl">
                   <p>
-                    En la barra de chat podrás contarnos todo lo que deseas
+                    Na barra de chat você pode nos contar tudo o que deseja
                     explorar.
                   </p>
                 </div>
 
-                {/* Ejemplos de prompts */}
+                {/* Exemplos de prompts */}
                 <div className="flex flex-col items-start justify-center px-6 gap-6 text-left">
                   <div className="bg-white border border-neutral-300 rounded-2xl shadow-sm p-6 max-w-2xl w-full">
                     <p className="font-semibold mb-4 text-neutral-600 text-base md:text-lg">
-                      Ejemplos de lo que puedes preguntar:
+                      Exemplos do que você pode perguntar:
                     </p>
                     <ul className="space-y-3 text-neutral-800 text-base md:text-lg">
-                      <li>🌄 Lugares que ver en Mérida</li>
-                      <li>🏕️ Aventura en Canaima</li>
-                      <li>🏖️ Posadas en Choroní</li>
+                      <li>🌄 Lugares para ver em Mérida</li>
+                      <li>🏕️ Aventura em Canaima</li>
+                      <li>🏖️ Pousadas em Choroní</li>
                       <li>🚐 Transporte Caracas–Lechería</li>
-                      <li>🍽️ Dónde comer en Margarita</li>
-                      <li>🎟️ Tours disponibles</li>
-                      <li>💡 Sugiéreme un destino</li>
+                      <li>🍽️ Onde comer em Margarita</li>
+                      <li>🎟️ Passeios disponíveis</li>
+                      <li>💡 Sugira um destino</li>
                     </ul>
                   </div>
                 </div>
@@ -211,12 +211,12 @@ export default function IndexPage() {
                     ]}
                     showBorder={false}
                   >
-                    Sin mil pestañas abiertas
+                    Sem mil abas abertas
                   </GradientText>
                   <p>🌪️</p>
                 </div>
                 <div className="text-2xl pt-6 md:text-3xl lg:text-4xl text-center max-w-3xl px-4">
-                  <p>Solo tú y tus ideas en un espacio donde todo fluye.</p>
+                  <p>Apenas você e suas ideias em um espaço onde tudo flui.</p>
                 </div>
               </div>
 
@@ -254,14 +254,13 @@ export default function IndexPage() {
                   ]}
                   showBorder={false}
                 >
-                  Siempre con algo valioso que ofrecer.
+                  Sempre com algo valioso para oferecer.
                 </GradientText>
                 <p>🤓</p>
               </div>
               <div className="text-2xl pt-6 md:text-4xl lg:text-5xl">
                 <span>
-                  Ya sea para una escapada personal o en grupo, lo encontrarás
-                  en el{" "}
+                  Seja para uma escapada pessoal ou em grupo, você encontrará no{" "}
                   <ShinyText
                     className="text-gray-800 font-bold bg-transparent"
                     disabled={false}
@@ -284,7 +283,7 @@ export default function IndexPage() {
 
             <div className="bg-[#fff] pb-10 px-6">
               <div className="text-2xl pt-6 md:text-4xl lg:text-5xl">
-                Tan fácil como preguntarle a quien realmente sabe 🤖
+                Tão fácil quanto perguntar a quem realmente sabe 🤖
               </div>
               <div className="flex justify-center mt-5">
                 <AnimatedContent>
@@ -315,13 +314,13 @@ export default function IndexPage() {
                     }
                   }}
                 >
-                  Ir a la App
+                  Ir para o App
                 </Link>
               </div>
             </div>
             <div className="flex justify-center gap-2 align-content-center text-xl md:text-4xl lg:text-5xl">
               <div>
-                <span> Vamos a planear algo juntos 🛎️</span>
+                <span> Vamos planejar algo juntos 🛎️</span>
               </div>
             </div>
             <div className="flex justify-center">
@@ -350,7 +349,7 @@ export default function IndexPage() {
                   className="text-gray-800  font-semibold text-lg"
                   disabled={false}
                   speed={10}
-                  text="¡Muy pronto más!"
+                  text="Em breve mais!"
                 />
               </Chip>
             </div>
@@ -362,7 +361,7 @@ export default function IndexPage() {
                 <SplitText
                   className="text-2xl font-bold md:text-5xl lg:text-6xl"
                   delay={50}
-                  text="Tu plan de viaje se organiza solo."
+                  text="Seu plano de viagem se organiza sozinho."
                 />
               </div>
               <div className="flex justify-center">
@@ -387,7 +386,7 @@ export default function IndexPage() {
                   ]}
                   showBorder={false}
                 >
-                  Viaia ya está lista. Solo faltas tú.
+                  Viaia já está pronta. Só falta você.
                 </GradientText>
                 <p>😎</p>
               </div>

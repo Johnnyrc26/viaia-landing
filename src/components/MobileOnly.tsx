@@ -4,6 +4,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { PricingTiers } from "./pricing";
 
 import GradientText from "@/blocks/TextAnimations/GradientText/GradientText";
+import ComparisonSection from "./ComparisonSection";
 
 export default function MobileOnly({
   children,
@@ -31,14 +32,13 @@ export default function MobileOnly({
       {/* Navbar Fijo */}
       <div className="sticky top-0 w-full bg-[#fcfcfc] dark:bg-[#1a1a1a] z-10">
         <div className="max-w-md mx-auto text-center py-4">
-          <img alt="Logo Viaia" className="mx-auto w-16" src="/Vector-4.png" />
+          <img alt="Logo Viaia" className="mx-auto w-32" src="/Vector-4.png" />
         </div>
       </div>
 
       {/* Contenido principal - Contenedor flexible */}
       <div className="flex-1 flex flex-col bg-[#fcfcfc] w-full">
         {/* Título */}
-        <img alt="Viaia" className="mx-auto w-48 pt-10" src="/Vector-2.png" />
         <div className="text-center px-6 sm:px-10 md:px-20 pb-8 pt-4">
           <GradientText
             animationSpeed={10}
@@ -46,7 +46,8 @@ export default function MobileOnly({
             colors={["#2E005D", "#5C0087", "#8A0087", "#FF6200", "#FF8000"]}
             showBorder={false}
           >
-            La primera IA de turismo en Venezuela
+            Tu nuevo socio operativo que ordena tu servicio y atiende a tus
+            clientes
           </GradientText>
         </div>
         {/* Sección Dividida - Usa flex-1 para ocupar espacio disponible */}
@@ -63,11 +64,12 @@ export default function MobileOnly({
           {/* Columna derecha */}
           <div className="flex flex-col items-center w-full lg:w-1/2 text-center lg:text-left lg:items-start lg:pl-4">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">
-              Tu nueva compañera de viaje
+              Atiende mejor, incluso cuando no estás
             </h2>
             <p className="text-gray-600 text-base sm:text-xl md:text-2xl lg:text-3xl dark:text-gray-400 mb-4 lg:mb-8">
-              Explora Venezuela con <strong>Viaia</strong>.<br /> Escanea el
-              código y atrévete a descubrir.
+              <strong>Viaia</strong> no te promete clientes.
+              <br />
+              Evita que pierdas los que ya te escriben.
             </p>
             <div className="w-full flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4 lg:gap-6">
               {/* Primer QR */}
@@ -129,8 +131,10 @@ export default function MobileOnly({
             </a>
           </div>
         </div>
+        <div className="w-full flex flex-col items-center py-10 px-4">
+          <ComparisonSection />
+        </div>
       </div>
-
       <PricingTiers />
 
       {/* Footer */}

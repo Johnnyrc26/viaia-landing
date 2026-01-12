@@ -10,6 +10,7 @@ import {
 import { Icon } from "@iconify/react";
 
 import GradientText from "@/blocks/TextAnimations/GradientText/GradientText";
+import ComparisonSection from "./ComparisonSection";
 
 const CATEGORY_STYLES = {
   ACCOMMODATION: { color: "#5C0087", name: "Alojamiento", action: "Reserva" },
@@ -157,8 +158,9 @@ export const PricingTiers: React.FC = () => {
           </GradientText>
         </h2>
         <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-md mx-auto">
-          Viaia impulsa tu visibilidad, optimiza tu gestión y conecta tu
-          servicio con más exploradores.
+          Viaia organiza la información de tu servicio y responde a tus clientes
+          de forma clara y automática, para que no pierdas oportunidades por
+          desorden o falta de tiempo.
         </p>
       </div>
 

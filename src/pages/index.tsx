@@ -1,5 +1,5 @@
 import { Link } from "@heroui/link";
-import { Chip } from "@heroui/react";
+import { Button, Chip } from "@heroui/react";
 import posthog from "posthog-js";
 
 import SplitText from "@/blocks/TextAnimations/SplitText/SplitText";
@@ -12,6 +12,7 @@ import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
 import GradientText from "@/blocks/TextAnimations/GradientText/GradientText";
 import ShinyText from "@/blocks/TextAnimations/ShinyText/ShinyText";
 import MobileOnly from "@/components/MobileOnly";
+import ComparisonSection from "@/components/ComparisonSection";
 import { PricingTiers } from "@/components/pricing";
 
 const textsVelocity = [
@@ -61,14 +62,14 @@ export default function IndexPage() {
                       ]}
                       showBorder={false}
                     >
-                      ¿Clientes perdidos por respuestas lentas o información
+                      ¿Alguna vez perdiste un cliente por una respuesta lenta o
                       confusa?
                     </GradientText>
                     <br />
                     <div className="text-2xl md:text-3xl lg:text-4xl text-center max-w-3xl">
                       <p>
-                        <b>Viaia</b> organiza tu atención para que no vuelva a
-                        pasar.
+                        <b>Viaia</b> organiza tu información para que no vuelva
+                        a pasar.
                       </p>
                     </div>
                   </div>
@@ -246,13 +247,6 @@ export default function IndexPage() {
 
             <div className="bg-gradient-to-b from-[#fff] to-[#f4f4f4] w-full pb-10 px-6">
               <div className="text-4xl pt-6 md:text-4xl lg:text-5xl flex flex-col items-center justify-center text-center">
-                <img
-                  alt="Logo"
-                  className="mb-2"
-                  height={40}
-                  src="/Vector-2.png"
-                  width={150}
-                />
                 <GradientText
                   animationSpeed={10}
                   className="custom-class"
@@ -326,6 +320,7 @@ export default function IndexPage() {
                 />
               </div>
             </div>
+            <ComparisonSection />
             <div className="flex justify-center my-4">
               <div className="flex gap-3">
                 <Link
@@ -361,6 +356,15 @@ export default function IndexPage() {
                 transition={{ type: "spring", damping: 30, stiffness: 400 }}
               />
             </div>
+            <Button
+              className="bg-[#007A8A] text-white hover:bg-[#0088C2] rounded-full shadow-lg px-8 py-2 transition-all mt-6"
+              size="lg"
+              onPress={() =>
+                (window.location.href = "https://wa.me/13075001620")
+              }
+            >
+              Contáctanos
+            </Button>
             <div className="flex gap-4 justify-center my-4">
               <Chip
                 className="relative overflow-hidden cursor-pointer transition-all hover:scale-105 bg-gray-50 border-2 border-gray-200 "

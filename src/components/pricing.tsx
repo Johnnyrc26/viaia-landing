@@ -10,7 +10,6 @@ import {
 import { Icon } from "@iconify/react";
 
 import GradientText from "@/blocks/TextAnimations/GradientText/GradientText";
-import ComparisonSection from "./ComparisonSection";
 
 const CATEGORY_STYLES = {
   ACCOMMODATION: { color: "#5C0087", name: "Alojamiento", action: "Reserva" },

@@ -25,7 +25,7 @@ const textsRotating = [
   "Ten un perfil web profesional",
   "Cómo atiendes a tus clientes",
   "Cómo te descubren",
-  "Ten control total de lo que ofreces",
+  "Control total de lo que ofreces",
   "Tus reservas",
   "Atención multilenguaje",
   "Productos listos para mostrar",

@@ -102,7 +102,9 @@ export default function IndexPage() {
                             className="flex items-center gap-3 relative z-10"
                             style={{ fontWeight: "bold" }}
                           >
-                            <span className="flex">Ver como funciona ✨</span>
+                            <span className="flex">
+                              Vive una nueva forma de atención ✨
+                            </span>
                           </span>
                         </Button>
                       </div>

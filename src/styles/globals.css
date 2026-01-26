@@ -2,6 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
+@property --glow-deg {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: -90deg;
+}
+
+@property --clr-1 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #B40078;
+}
+
+@property --clr-2 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #5C0087;
+}
+
+@property --clr-3 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #FF8000;
+}
+
+@property --clr-4 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #2E005D;
+}
+
+@property --clr-5 {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: #007A8A;
+}
+
+@layer components {
+  .glowing-border {
+    --gradient-glow: var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4),
+      var(--clr-5), var(--clr-1);
+    --border-width: 3px;
+    --glow-size: 1rem;
+    --surface: #1a1a1a;
+
+    border: var(--border-width) solid transparent;
+    border-radius: 9999px;
+    background: linear-gradient(var(--surface, canvas) 0 0) padding-box,
+      conic-gradient(from var(--glow-deg), var(--gradient-glow)) border-box;
+
+    position: relative;
+    isolation: isolate;
+    animation: glow-animation 10s infinite linear;
+  }
+
+  @keyframes glow-animation {
+    100% {
+      --glow-deg: 270deg;
+    }
+  }
+
+  .glowing-border::before,
+  .glowing-border::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+  }
+
+  .glowing-border::before {
+    z-index: -1;
+    inset: 0.5rem;
+    scale: 1.2 1;
+    transform-origin: right;
+    filter: blur(var(--glow-size));
+  }
+
+  .glowing-border::after {
+    z-index: -2;
+    inset: -1.5rem;
+    background: conic-gradient(from var(--glow-deg), var(--gradient-glow));
+    filter: blur(var(--glow-size));
+    opacity: var(--glow-intensity, 0.125);
+  }
+
+  .glowing-border.right {
+    margin-inline-start: auto;
+  }
+
+  .glowing-border.right::before {
+    transform-origin: left;
+  }
+}
+
 .animate-pulse-slow {
   animation: pulse-slow 2s ease-in-out infinite;
 }

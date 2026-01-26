@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+.animate-pulse-slow {
+  animation: pulse-slow 2s ease-in-out infinite;
+}
+
+@keyframes text-glow {
+  0%,
+  100% {
+    text-shadow:
+      0 0 5px #ff6200,
+      0 0 10px #8a0087;
+  }
+  50% {
+    text-shadow:
+      0 0 10px #ff6200,
+      0 0 20px #8a0087;
+  }
+}
+
+.animate-text-glow {
+  animation: text-glow 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse-slow {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -29,7 +63,7 @@
 }
 
 .shine-effect::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;

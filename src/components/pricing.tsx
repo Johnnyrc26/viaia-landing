@@ -1,12 +1,5 @@
-import React, { useState } from "react";
-import {
-  Card,
-  CardBody,
-  CardHeader,
-  Button,
-  Chip,
-  Switch,
-} from "@heroui/react";
+import React from "react";
+import { Card, CardBody, CardHeader, Button, Chip } from "@heroui/react";
 import { Icon } from "@iconify/react";
 
 import GradientText from "@/blocks/TextAnimations/GradientText/GradientText";
@@ -47,100 +40,53 @@ type PricingTier = {
 };
 
 export const PricingTiers: React.FC = () => {
-  const [selectedCategory, setSelectedCategory] =
-    useState<keyof typeof CATEGORY_STYLES>("ACCOMMODATION");
-  const [isAnnual, setIsAnnual] = useState<boolean>(false);
-
   const tiers: PricingTier[] = [
     {
-      name: "Alojamientos (hasta 20 habitaciones)",
-      originalPrice: 70.0,
-      discountedPrice: 50.0,
+      name: "Plan Freemium",
+      originalPrice: 0,
+      discountedPrice: 0,
       description:
-        "Ideal para posadas o alojamientos pequeños que buscan más visibilidad y gestión inteligente.",
+        "Vive la experiencia de organiza tu servicio de manera eficiente y descubre cómo podemos optimizar la atención a tus clientes.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Soporte de IA 24/7",
-        "Gestión completa de perfil y reservas",
+        "Hasta 50 conversaciones para probar la plataforma",
+        "Acceso inmediato y sin riesgos",
+        "Evalúa el potencial de Viaia antes de avanzar al siguiente nivel",
       ],
-      icon: "lucide:home",
+      icon: "lucide:star",
       category: "ACCOMMODATION",
     },
     {
-      name: "Alojamientos (más de 20 habitaciones)",
-      originalPrice: 100.0,
-      discountedPrice: 80.0,
+      name: "Plan Prepago",
+      originalPrice: 10,
+      discountedPrice: 10,
       description:
-        "Para hoteles o complejos turísticos con más demanda y necesidad de control avanzado.",
+        "Flexibilidad total para servicios que buscan escalar a su ritmo. Recarga conversaciones según tus necesidades y aprovecha todo el potencial de Viaia.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Gestión de datos, disponibilidad y precios",
-        "Panel completo de reservas y clientes",
-        "Certificación de servicio Viaia",
+        "75 conversaciones por recarga, con opción de aumentar el saldo fácilmente",
+        "Prueba la plataforma mientras crece tu operación",
+        "Soporte básico con seguimiento personalizado",
+        "Control total sobre el uso y la expansión de tus servicios",
       ],
-      icon: "lucide:building",
+      icon: "lucide:credit-card",
       category: "ACCOMMODATION",
       isPopular: true,
     },
     {
-      name: "Actividades turísticas",
-      originalPrice: 70.0,
-      discountedPrice: 50.0,
+      name: "Plan Básico",
+      originalPrice: 30,
+      discountedPrice: 30,
       description:
-        "Perfecto para operadores, guías y experiencias locales que quieren conectar con más viajeros.",
+        "Diseñado para servicios consolidados que buscan eficiencia y excelencia. Maximiza la interacción con clientes mientras disfrutas soporte integral y certificación oficial Viaia.",
       features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Gestión de reservas y disponibilidad",
-        "Integración con atención automática por chat",
+        "Hasta 300 conversaciones mensuales para atención efectiva",
+        "Soporte completo 24/7 para operaciones sin interrupciones",
+        "Panel de control avanzado para métricas y gestión de conversaciones",
+        "Certificación oficial Viaia que potencia la confianza de tus clientes",
       ],
-      icon: "lucide:compass",
-      category: "ACTIVITY",
-      isPopular: true,
-    },
-    {
-      name: "Restaurantes",
-      originalPrice: 50.0,
-      discountedPrice: 30.0,
-      description:
-        "Pensado para restaurantes, cafés y bares que buscan atraer viajeros y mostrar su oferta.",
-      features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Gestión de perfil y reseñas",
-        "Atención automatizada a consultas",
-      ],
-      icon: "lucide:utensils-crossed",
-      category: "F_AND_B",
-      isPopular: true,
-    },
-    {
-      name: "Transporte",
-      originalPrice: 50.0,
-      discountedPrice: 30.0,
-      description:
-        "Ideal para servicios de traslado, tours sobre ruedas o transporte privado que deseen más reservas.",
-      features: [
-        "1 mes de prueba gratis",
-        "20% de descuento por suscripción anual",
-        "Certificación de servicio Viaia",
-        "Gestión de perfil, rutas y disponibilidad",
-        "Atención automatizada a solicitudes de traslado",
-      ],
-      icon: "lucide:bus",
-      category: "TRANSPORT",
-      isPopular: true,
+      icon: "lucide:shield-check",
+      category: "ACCOMMODATION",
     },
   ];
-
-  const filteredTiers = tiers.filter(
-    (tier) => tier.category === selectedCategory,
-  );
 
   return (
     <div className="w-full flex flex-col items-center py-10 px-4">
@@ -156,69 +102,29 @@ export const PricingTiers: React.FC = () => {
             Planes adaptados a tu servicio
           </GradientText>
         </h2>
-        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-md mx-auto">
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300 max-w-xl mx-auto">
           Viaia organiza la información de tu servicio y responde a tus clientes
           de forma clara y automática, para que no pierdas oportunidades por
           desorden o falta de tiempo.
         </p>
       </div>
 
-      {/* Tabs de categorías */}
-      <div className="flex flex-wrap justify-center gap-3 mb-8">
-        {Object.entries(CATEGORY_STYLES).map(([key, { color, name }]) => (
-          <button
-            key={key}
-            className={`px-4 py-2 text-sm font-semibold rounded-full border-2 transition-all ${
-              selectedCategory === key
-                ? "text-white"
-                : "bg-transparent text-gray-600"
-            }`}
-            style={{
-              backgroundColor: selectedCategory === key ? color : "transparent",
-              borderColor: color,
-            }}
-            onClick={() =>
-              setSelectedCategory(key as keyof typeof CATEGORY_STYLES)
-            }
-          >
-            {name}
-          </button>
-        ))}
-      </div>
-
-      {/* Toggle de precios mensual/anual */}
-      <div className="flex justify-center items-center gap-4 mb-8">
-        <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-          Mensual
-        </span>
-        <Switch
-          aria-label="Cambiar a precios anuales"
-          color="default"
-          isSelected={isAnnual}
-          size="lg"
-          onValueChange={setIsAnnual}
-        />
-        <div className="flex items-center gap-2">
-          <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
-            Anual
-          </span>
-        </div>
-      </div>
       <div className="flex justify-center w-full">
-        <div className="flex flex-col md:flex-row xl:flex-row justify-center items-stretch gap-8 max-w-7xl w-full">
-          {filteredTiers.map((tier, index) => (
+        <div className="flex flex-col md:flex-row justify-center items-stretch gap-10 max-w-7xl w-full mx-auto px-4">
+          {tiers.map((tier, index) => (
             <Card
               key={index}
-              className={`border-2 relative ${
+              className={`border-2 relative rounded-2xl shadow-lg transition-transform duration-300 hover:scale-105 overflow-visible ${
                 tier.isPopular
-                  ? "border-[#007A8A] shining-border"
-                  : "border-default-200"
-              } overflow-visible transition-all duration-300`}
+                  ? "border-[#007A8A] shining-border bg-gradient-to-b from-white to-[#f0faff]"
+                  : "border-gray-200 bg-white"
+              }`}
             >
+              {/* Etiqueta de plan más popular */}
               {tier.isPopular && (
-                <div className="absolute -top-3 left-0 right-0 flex justify-center">
+                <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
                   <Chip
-                    className="h-6 bg-[#007A8A] text-white border-2 border-white/50 shining-chip"
+                    className="h-7 px-3 bg-[#007A8A] text-white font-semibold border-2 border-white/50 shining-chip"
                     variant="shadow"
                   >
                     Más popular
@@ -226,57 +132,56 @@ export const PricingTiers: React.FC = () => {
                 </div>
               )}
 
-              <CardHeader className="flex flex-col items-center gap-2 pt-6 text-center">
+              {/* Header del Card */}
+              <CardHeader className="flex flex-col items-center gap-3 pt-8 text-center">
                 <Icon
-                  className="text-3xl mb-1"
+                  className="text-4xl mb-1"
                   icon={tier.icon}
-                  style={{ color: CATEGORY_STYLES[tier.category].color }}
+                  style={{ color: tier.isPopular ? "#007A8A" : "#5C0087" }}
                 />
-                <h3 className="text-lg font-bold">{tier.name}</h3>
-                <p className="text-sm text-foreground-500 px-4">
-                  {tier.description}
-                </p>
+                <h3 className="text-xl font-bold text-gray-900">{tier.name}</h3>
+                <p className="text-sm text-gray-500 px-6">{tier.description}</p>
               </CardHeader>
 
-              <CardBody className="py-6 text-center">
-                <div className="flex justify-center items-baseline gap-2 mb-2">
-                  <span className="text-3xl font-bold">
-                    $
-                    {isAnnual
-                      ? Math.round(tier.originalPrice * 12 * 0.8)
-                      : tier.originalPrice}
+              {/* Body del Card */}
+              <CardBody className="py-8 text-center">
+                <div className="flex justify-center items-baseline gap-2 mb-6">
+                  <span className="text-4xl font-extrabold text-gray-900">
+                    ${tier.originalPrice}
                   </span>
-                  <span className="text-danger text-sm font-medium">
-                    /{isAnnual ? "año" : "mes"}
+                  <span className="text-sm font-medium text-gray-500">
+                    /mes
                   </span>
                 </div>
 
-                {/* Información adicional según el período seleccionado */}
-                {isAnnual ? (
-                  <div className="mx-auto mb-4 text-center text-sm text-gray-700 dark:text-gray-300">
-                    <div className="text-green-600 font-semibold">
-                      ¡Ahorras ${Math.round(tier.originalPrice * 12 * 0.2)} al
-                      año!
-                    </div>
-                  </div>
-                ) : (
-                  <div className="mx-auto mb-4 text-center text-sm text-gray-700 dark:text-gray-300">
-                    <div className="text-gray-500">
-                      Paga anualmente y ahorra 20%
-                    </div>
-                  </div>
-                )}
-
-                {/* Características */}
-                <div className="flex flex-col gap-2">
+                <div className="flex flex-col gap-3">
                   {tier.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-2 text-sm">
-                      <Icon className="text-success" icon="lucide:check" />
-                      <span>{feature}</span>
+                    <div key={idx} className="flex items-center gap-2">
+                      <Icon
+                        className="text-green-500 flex-shrink-0"
+                        icon="lucide:check"
+                        style={{ width: "1.2rem", height: "1.2rem" }} // 19px, perfecto para texto sm
+                      />
+                      <span className="text-gray-700 text-sm leading-tight">
+                        {feature}
+                      </span>
                     </div>
                   ))}
                 </div>
               </CardBody>
+
+              {/* Call-to-Action opcional */}
+              {/* <div className="pb-6 px-6 flex justify-center">
+                <button
+                  className={`mt-4 px-6 py-2 rounded-full font-semibold transition-colors duration-300 ${
+                    tier.isPopular
+                      ? "bg-[#007A8A] text-white hover:bg-[#005f67]"
+                      : "bg-gray-100 text-gray-800 hover:bg-gray-200"
+                  }`}
+                >
+                  Seleccionar plan
+                </button>
+              </div> */}
             </Card>
           ))}
         </div>

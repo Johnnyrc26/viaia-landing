@@ -76,26 +76,37 @@ export default function IndexPage() {
 
                   <div className="mt-12 flex flex-col items-center gap-6">
                     {/* Botón principal - Web App */}
-                    <a
-                      className="bg-white border-2 border-[#5C0087] hover:scale-105 transition-transform duration-300 rounded-full px-16 py-3 shadow-lg flex items-center justify-center max-w-xs"
-                      href="https://app.esviaia.com/details/68f6b1aa2a45362d6dbe89f3"
-                    >
-                      <GradientText
-                        animationSpeed={5}
-                        className="text-lg font-bold"
-                        colors={[
-                          "#2E005D",
-                          "#FF6200",
-                          "#5C0087",
-                          "#FF8000",
-                          "#8A0087",
-                        ]}
-                        showBorder={false}
+                    <div className="mt-12 flex flex-col items-center gap-6 w-full">
+                      <div
+                        className="w-full glowing-border group hover:scale-[1.02] active:scale-95 transition-all duration-300"
+                        style={
+                          {
+                            "--surface": "white",
+                            "--glow-intensity": "0.23",
+                            "--border-width": "1px",
+                          } as React.CSSProperties
+                        }
                       >
-                        Ver cómo funciona
-                      </GradientText>
-                      <p>✨</p>
-                    </a>
+                        <Button
+                          as="a"
+                          className="w-full bg-[rgba(243,243,243,1)] dark:bg-[#808080] backdrop-blur-xl font-medium tracking-wide border-none"
+                          href="https://app.esviaia.com/details/68f6b1aa2a45362d6dbe89f3"
+                          radius="full"
+                          size="lg"
+                          style={{
+                            color: "black",
+                            height: "56px",
+                          }}
+                        >
+                          <span
+                            className="flex items-center gap-3 relative z-10"
+                            style={{ fontWeight: "bold" }}
+                          >
+                            <span className="flex">Ver como funciona ✨</span>
+                          </span>
+                        </Button>
+                      </div>
+                    </div>
 
                     {/* Botones deshabilitados - App Store y Google Play */}
                     <Chip

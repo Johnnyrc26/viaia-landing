@@ -65,10 +65,9 @@ export default function ComparisonSection() {
       <h2 className="text-4xl flex flex-col md:text-5xl text-center font-bold mb-10 flex-wrap items-center justify-center gap-2">
         <img
           alt="Logo"
-          className="mb-2"
+          className="mb-2 w-[150px] md:w-[350px]"
           height={40}
           src="/Vector-2.png"
-          width={150}
         />
         Te ayuda a no perder clientes
       </h2>

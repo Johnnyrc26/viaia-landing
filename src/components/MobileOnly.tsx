@@ -11,7 +11,6 @@ import AnimatedContent from "@/blocks/Animations/AnimatedContent/AnimatedContent
 import ScrollVelocity from "@/blocks/TextAnimations/ScrollVelocity/ScrollVelocity";
 import RotatingText from "@/blocks/TextAnimations/RotatingText/RotatingText";
 import FadeContent from "@/blocks/Animations/FadeContent/FadeContent";
-import ShinyText from "@/blocks/TextAnimations/ShinyText/ShinyText";
 
 const textsVelocity = [
   "Alojamientos Experiencias Actividades Transporte Organización",

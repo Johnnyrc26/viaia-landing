@@ -4,12 +4,12 @@ import { Icon } from "@iconify/react";
 
 import GradientText from "@/blocks/TextAnimations/GradientText/GradientText";
 
-const CATEGORY_STYLES = {
-  ACCOMMODATION: { color: "#5C0087", name: "Alojamiento", action: "Reserva" },
-  ACTIVITY: { color: "#FF8000", name: "Actividad", action: "Vive" },
-  F_AND_B: { color: "#B40078", name: "Restaurante", action: "Ordena" },
-  TRANSPORT: { color: "#2E005D", name: "Transporte", action: "Viaja" },
-};
+// const CATEGORY_STYLES = {
+//   ACCOMMODATION: { color: "#5C0087", name: "Alojamiento", action: "Reserva" },
+//   ACTIVITY: { color: "#FF8000", name: "Actividad", action: "Vive" },
+//   F_AND_B: { color: "#B40078", name: "Restaurante", action: "Ordena" },
+//   TRANSPORT: { color: "#2E005D", name: "Transporte", action: "Viaja" },
+// };
 
 const styles = `
   @keyframes borderShine {
@@ -35,7 +35,7 @@ type PricingTier = {
   description: string;
   features: string[];
   icon: string;
-  category: keyof typeof CATEGORY_STYLES;
+  // category: keyof typeof CATEGORY_STYLES;
   isPopular?: boolean;
 };
 
@@ -53,7 +53,7 @@ export const PricingTiers: React.FC = () => {
         "Evalúa el potencial de Viaia antes de avanzar al siguiente nivel",
       ],
       icon: "lucide:star",
-      category: "ACCOMMODATION",
+      // category: "ACCOMMODATION",
     },
     {
       name: "Plan Prepago",
@@ -68,7 +68,7 @@ export const PricingTiers: React.FC = () => {
         "Control total sobre el uso y la expansión de tus servicios",
       ],
       icon: "lucide:credit-card",
-      category: "ACCOMMODATION",
+      // category: "ACCOMMODATION",
       isPopular: true,
     },
     {
@@ -84,7 +84,7 @@ export const PricingTiers: React.FC = () => {
         "Certificación oficial Viaia que potencia la confianza de tus clientes",
       ],
       icon: "lucide:shield-check",
-      category: "ACCOMMODATION",
+      // category: "ACCOMMODATION",
     },
   ];
 

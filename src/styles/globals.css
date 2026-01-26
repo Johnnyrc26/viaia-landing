@@ -3,52 +3,54 @@
 @tailwind utilities;
 
 @property --glow-deg {
-  syntax: "<angle>";
+  syntax: '<angle>';
   inherits: true;
   initial-value: -90deg;
 }
 
 @property --clr-1 {
-  syntax: "<color>";
+  syntax: '<color>';
   inherits: true;
-  initial-value: #B40078;
+  initial-value: #b40078;
 }
 
 @property --clr-2 {
-  syntax: "<color>";
+  syntax: '<color>';
   inherits: true;
-  initial-value: #5C0087;
+  initial-value: #5c0087;
 }
 
 @property --clr-3 {
-  syntax: "<color>";
+  syntax: '<color>';
   inherits: true;
-  initial-value: #FF8000;
+  initial-value: #ff8000;
 }
 
 @property --clr-4 {
-  syntax: "<color>";
+  syntax: '<color>';
   inherits: true;
-  initial-value: #2E005D;
+  initial-value: #2e005d;
 }
 
 @property --clr-5 {
-  syntax: "<color>";
+  syntax: '<color>';
   inherits: true;
-  initial-value: #007A8A;
+  initial-value: #007a8a;
 }
 
 @layer components {
   .glowing-border {
-    --gradient-glow: var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4),
-      var(--clr-5), var(--clr-1);
+    --gradient-glow:
+      var(--clr-1), var(--clr-2), var(--clr-3), var(--clr-4), var(--clr-5),
+      var(--clr-1);
     --border-width: 3px;
-    --glow-size: 1rem;
+    --glow-size: 0.5rem;
     --surface: #1a1a1a;
 
     border: var(--border-width) solid transparent;
     border-radius: 9999px;
-    background: linear-gradient(var(--surface, canvas) 0 0) padding-box,
+    background:
+      linear-gradient(var(--surface, canvas) 0 0) padding-box,
       conic-gradient(from var(--glow-deg), var(--gradient-glow)) border-box;
 
     position: relative;
@@ -62,40 +64,23 @@
     }
   }
 
-  .glowing-border::before,
   .glowing-border::after {
-    content: "";
+    content: '';
     position: absolute;
     border-radius: inherit;
-  }
-
-  .glowing-border::before {
-    z-index: -1;
-    inset: 0.5rem;
-    scale: 1.2 1;
-    transform-origin: right;
-    filter: blur(var(--glow-size));
-  }
-
-  .glowing-border::after {
     z-index: -2;
-    inset: -1.5rem;
+    /* Ajustar inset para que sea al menos igual al glow-size para un blur más suave */
+    inset: calc(-1 * var(--glow-size));
     background: conic-gradient(from var(--glow-deg), var(--gradient-glow));
     filter: blur(var(--glow-size));
     opacity: var(--glow-intensity, 0.125);
+    /* Forzar aceleración por hardware para evitar artefactos en móviles */
+    transform: translateZ(0);
   }
 
   .glowing-border.right {
     margin-inline-start: auto;
   }
-
-  .glowing-border.right::before {
-    transform-origin: left;
-  }
-}
-
-.animate-pulse-slow {
-  animation: pulse-slow 2s ease-in-out infinite;
 }
 
 @keyframes text-glow {

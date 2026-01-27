@@ -206,20 +206,10 @@ export default function IndexPage() {
                     </ul>
                   </div>
                 </div>
-
-                <div className="flex justify-center ">
-                  <FadeContent>
-                    <img
-                      alt="Chat interface illustration"
-                      className="w-70"
-                      src="/InputChat2.png"
-                    />
-                  </FadeContent>
-                </div>
               </div>
             </div>
 
-            <div className="bg-orange-50 w-full pt-6">
+            {/* <div className="bg-orange-50 w-full pt-6">
               <div className="text-2xl pt-6 md:text-3xl lg:text-4xl text-center max-w-3xl">
                 <div className="text-4xl  md:text-4xl lg:text-5xl text-center">
                   <GradientText
@@ -234,14 +224,12 @@ export default function IndexPage() {
                     ]}
                     showBorder={false}
                   >
-                    Hazte fácil de encontrar
+                    Hazte fácil de conocer
                   </GradientText>
                   <p>🔍</p>
                 </div>
                 <div className="text-2xl pt-6 md:text-3xl lg:text-4xl text-center max-w-3xl px-4">
-                  <p>
-                    Que te encuentren, te entiendan y reserven en segundos. 🤓
-                  </p>
+                  <p>Que te encuentren y te entiendan en segundos. 🤓</p>
                 </div>
               </div>
 
@@ -256,7 +244,7 @@ export default function IndexPage() {
                   </div>
                 </AnimatedContent>
               </div>
-            </div>
+            </div> */}
 
             <div className="bg-gradient-to-b from-[#fff] to-[#f4f4f4] w-full pb-10 px-6">
               <div className="text-4xl pt-6 md:text-4xl lg:text-5xl flex flex-col items-center justify-center text-center">

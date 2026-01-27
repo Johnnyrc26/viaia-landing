@@ -28,7 +28,9 @@ export default function NavBar() {
           <Button
             as={Link}
             className="text-[#007A8A] border-[#007A8A] hover:text-whit"
-            href="https://app.esviaia.com/"
+            href="https://wa.me/584248005957"
+            rel="noopener noreferrer"
+            target="_blank"
             variant="bordered"
             onPress={() => {
               {
@@ -36,7 +38,7 @@ export default function NavBar() {
               }
             }}
           >
-            Ir a la App
+            Contáctanos
           </Button>
         </NavbarItem>
       </NavbarContent>

@@ -89,7 +89,7 @@ export default function IndexPage() {
                         <Button
                           as="a"
                           className="w-full bg-[rgba(243,243,243,1)] dark:bg-[#808080] backdrop-blur-xl font-medium tracking-wide border-none"
-                          href="https://app.esviaia.com/details/68f6b1aa2a45362d6dbe89f3"
+                          href="https://app.esviaia.com/details/c363b451-6815-4395-88d6-f6b08fe27447"
                           radius="full"
                           size="lg"
                           style={{

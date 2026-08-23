@@ -41,16 +41,15 @@ export default function IndexPage() {
         <div className="blob blob-2"></div>
         <div className="blob blob-3"></div>
         <div className="hero-content">
-          <div className="hero-badge">El ecosistema Viaia</div>
-          <h1 className="hero-title">
+          <div className="hero-badge fade-in">El ecosistema Viaia</div>
+          <h1 className="hero-title fade-in d1">
             Dos productos<br />
             Un solo <em>propósito</em>
           </h1>
-          <p className="hero-sub">
-            Viaia conecta a los viajeros con respuestas al instante, y a los operadores con las herramientas para brillar.<br />
-            ¿Cuál eres tú?
+          <p className="hero-sub fade-in d2">
+            Viaia conecta a los <strong>viajeros</strong> con respuestas inmediatas y a los <strong>operadores turísticos</strong> con tecnología para automatizar y multiplicar sus ventas.
           </p>
-          <div className="cards-grid">
+          <div className="cards-grid fade-in d3">
             <a href="https://app.esviaia.com" className="choice-card card-app">
               <div className="card-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -68,7 +67,7 @@ export default function IndexPage() {
                 <span className="pill">15+ idiomas</span>
                 <span className="pill">Perfil profesional</span>
                 <span className="pill">Atención inmediata</span>
-                <span className="pill">Enfocado a la venta</span>
+                <span className="pill">Enfocado en ventas</span>
               </div>
               <span className="card-cta">
                 Explorar App <span className="card-arrow">→</span>
@@ -92,7 +91,7 @@ export default function IndexPage() {
                 <span className="pill">Calendario automatizado</span>
                 <span className="pill">Integraciones sociales</span>
                 <span className="pill">Tienes el control total</span>
-                <span className="pill">Gestion de productos</span>
+                <span className="pill">Gestión de productos</span>
               </div>
               <span className="card-cta">
                 Explorar Flow <span className="card-arrow">→</span>
@@ -110,33 +109,33 @@ export default function IndexPage() {
         <div className="app-section-header">
           <div className="section-tag tag-purple">Para viajeros y exploradores</div>
           <h2 className="section-title">
-            Todo empieza con una<br />
-            <em>conversación clara</em>
+            Encuentra tu próxima aventura<br />
+            <em>en segundos</em>
           </h2>
           <p className="section-sub">
-            Tus clientes preguntan, Viaia responde al instante. Disponible siempre, incluso cuando tú no estás.
+            Pregunta lo que quieras sobre destinos, precios o disponibilidad y recibe respuestas claras al instante, a cualquier hora.
           </p>
         </div>
         <div className="app-highlights">
           <div className="app-highlight-card">
             <span className="app-highlight-emoji">💬</span>
-            <div className="app-highlight-title">Todo empieza con una conversación clara</div>
+            <div className="app-highlight-title">Respuestas inteligentes al instante</div>
             <p className="app-highlight-desc">
-              Tus clientes preguntan, Viaia responde al instante, de forma clara y profesional. Disponible siempre, incluso cuando tú no estás.
+              Resuelve tus dudas sobre itinerarios, servicios y tarifas en tiempo real sin esperar horas por un mensaje.
             </p>
           </div>
           <div className="app-highlight-card">
             <span className="app-highlight-emoji">⚡️</span>
-            <div className="app-highlight-title">Mantén tu servicio siempre al alcance</div>
+            <div className="app-highlight-title">Información clara y en tu idioma</div>
             <p className="app-highlight-desc">
-              Tu servicio listo, claro y profesional, sin perder tiempo ni clientes. Lo que empezó como un primer paso, ahora es tu operación en acción.
+              Consulta detalles en más de 15 idiomas con la tranquilidad de recibir datos precisos y actualizados directamente de los operadores.
             </p>
           </div>
           <div className="app-highlight-card">
             <span className="app-highlight-emoji">✨</span>
-            <div className="app-highlight-title">¿Te atreves a vivir una atención única?</div>
+            <div className="app-highlight-title">Reserva directa y sin intermediarios</div>
             <p className="app-highlight-desc">
-              Con Viaia, tus clientes reciben respuestas inmediatas y profesionales, mientras tú disfrutas de tranquilidad y control total.
+              Conecta directamente con las mejores opciones y asegura tus actividades o alojamientos de forma rápida, transparente y sencilla.
             </p>
           </div>
         </div>
@@ -152,7 +151,7 @@ export default function IndexPage() {
             El primer paso para optimizar tu atención
           </div>
           <h2 className="section-title teal" style={{ marginTop: "4px" }}>
-            Te ayuda a no <em>perder clientes</em>
+            Convierte cada consulta en una <em>venta real</em>
           </h2>
           <p className="section-sub">Lo que cambia cuando Viaia trabaja por ti.</p>
         </div>
@@ -175,9 +174,9 @@ export default function IndexPage() {
               </tr>
               <tr>
                 <td>🚀 Mejora la conversión</td>
-                <td className="viaia-col">+23–70% de conversión enfocada en acciones</td>
-                <td>3–12% con atención tradicional</td>
-                <td className="result-col">+40–60% más retención con Viaia</td>
+                <td className="viaia-col">23% – 70% de conversión enfocada en acciones</td>
+                <td>3% – 12% con atención tradicional</td>
+                <td className="result-col">40% – 60% más retención con Viaia</td>
               </tr>
               <tr>
                 <td>⏱️ Tiempo de respuesta</td>
@@ -187,7 +186,7 @@ export default function IndexPage() {
               </tr>
               <tr>
                 <td>🤖 Tasa de resolución</td>
-                <td className="viaia-col">71–93% de consultas resueltas automáticamente</td>
+                <td className="viaia-col">71% – 93% de consultas resueltas automáticamente</td>
                 <td>Depende de intervención humana</td>
                 <td className="result-col">Lleva a otro nivel la experiencia del cliente</td>
               </tr>
@@ -198,7 +197,7 @@ export default function IndexPage() {
                 <td className="result-col">Preparado para atender a cualquier público</td>
               </tr>
               <tr>
-                <td>📄 Densidad de información</td>
+                <td>📄 Claridad del mensaje</td>
                 <td className="viaia-col">Clara y directa, orientada a la venta</td>
                 <td>Mensajes largos, confusos y densos</td>
                 <td className="result-col">Mayor comprensión y retención</td>
@@ -212,91 +211,6 @@ export default function IndexPage() {
             </tbody>
           </table>
         </div>
-      </div>
-
-      {/* PRICING */}
-      <div className="pricing-section fade-in d1">
-        <div style={{ textAlign: "center", marginBottom: "48px" }}>
-          <div className="section-tag tag-teal" style={{ display: "inline-flex" }}>
-            Parte de Viaia Flow
-          </div>
-          <h2 className="section-title teal" style={{ marginTop: "4px" }}>
-            Planes adaptados a <em>tu servicio</em>
-          </h2>
-          <p className="section-sub">
-            Viaia organiza la información de tu servicio y responde a tus clientes de forma clara y automática, para que no pierdas oportunidades.
-          </p>
-        </div>
-        <div className="pricing-grid">
-          <div className="pricing-card">
-            <div className="pricing-plan">Plan Freemium</div>
-            <div className="pricing-name">Empieza sin riesgos</div>
-            <div className="pricing-tagline">
-              Vive la experiencia de organizar tu servicio de manera eficiente y descubre cómo Viaia puede optimizar tu atención.
-            </div>
-            <div className="pricing-price">
-              <span className="price-num">$0</span>
-              <span className="price-per">/mes</span>
-            </div>
-            <div className="pricing-divider"></div>
-            <div className="pricing-features">
-              <div className="pricing-feat">Hasta 50 conversaciones para probar la plataforma</div>
-              <div className="pricing-feat">Acceso inmediato y sin riesgos</div>
-              <div className="pricing-feat">Evalúa el potencial antes de avanzar</div>
-            </div>
-            <a href="https://flow.esviaia.com" className="pricing-cta">
-              Comenzar gratis
-            </a>
-          </div>
-
-          <div className="pricing-card popular">
-            <div className="popular-badge">Más popular</div>
-            <div className="pricing-plan">Plan Prepago</div>
-            <div className="pricing-name">Flexibilidad total</div>
-            <div className="pricing-tagline">
-              Para servicios que buscan escalar a su ritmo. Recarga según tus necesidades.
-            </div>
-            <div className="pricing-price">
-              <span className="price-num">$10</span>
-              <span className="price-per">/mes</span>
-            </div>
-            <div className="pricing-divider"></div>
-            <div className="pricing-features">
-              <div className="pricing-feat">75 conversaciones por recarga, ampliable fácilmente</div>
-              <div className="pricing-feat">Prueba mientras crece tu operación</div>
-              <div className="pricing-feat">Soporte básico con seguimiento personalizado</div>
-              <div className="pricing-feat">Control total sobre el uso y expansión</div>
-            </div>
-            <a href="https://flow.esviaia.com" className="pricing-cta">
-              Elegir Prepago
-            </a>
-          </div>
-
-          <div className="pricing-card">
-            <div className="pricing-plan">Plan Básico</div>
-            <div className="pricing-name">Eficiencia y excelencia</div>
-            <div className="pricing-tagline">
-              Para servicios consolidados. Maximiza la interacción con soporte integral y certificación oficial Viaia.
-            </div>
-            <div className="pricing-price">
-              <span className="price-num">$30</span>
-              <span className="price-per">/mes</span>
-            </div>
-            <div className="pricing-divider"></div>
-            <div className="pricing-features">
-              <div className="pricing-feat">Hasta 300 conversaciones mensuales</div>
-              <div className="pricing-feat">Soporte completo 24/7 sin interrupciones</div>
-              <div className="pricing-feat">Panel avanzado de métricas y gestión</div>
-              <div className="pricing-feat">Certificación oficial Viaia</div>
-            </div>
-            <a href="https://flow.esviaia.com" className="pricing-cta">
-              Elegir Básico
-            </a>
-          </div>
-        </div>
-        <p className="pricing-footer">
-          ¿Necesitas algo personalizado? <a href="https://wa.me/584228846783">Conversemos sobre tu servicio →</a>
-        </p>
       </div>
 
       {/* HOW IT CONNECTS */}
@@ -339,13 +253,10 @@ export default function IndexPage() {
 
       {/* CHANNELS */}
       <div className="section-divider fade-in">
-        <div className="divider-label">Viaia Flow · Canales</div>
+        <div className="divider-label">Canales de Atención</div>
       </div>
       <div className="channels-section fade-in d1">
         <div style={{ textAlign: "center", marginBottom: "48px" }}>
-          <div className="section-tag tag-teal" style={{ display: "inline-flex" }}>
-            Parte de Viaia Flow
-          </div>
           <h2 className="section-title teal" style={{ marginTop: "4px" }}>
             Viaia responde donde<br />
             <em>tus clientes escriben</em>
@@ -436,9 +347,46 @@ export default function IndexPage() {
             </div>
             <span className="channel-badge">Disponible</span>
           </div>
+          <div className="channel-card channel-web">
+            <div className="channel-header">
+              <div className="channel-logo">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#007A8A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <div className="channel-name">Canal Web</div>
+                <div className="channel-handle">Tu sitio web con asistente integrado</div>
+              </div>
+            </div>
+            <p className="channel-desc">
+              Obtén tu propia página web donde un asistente inteligente atiende consultas y gestiona reservas para orientar a tus visitantes y cerrar ventas en tiempo real.
+            </p>
+            <div className="channel-feats">
+              <div className="channel-feat">
+                <div className="channel-feat-dot"></div>
+                <span>Tu propia web profesional lista para recibir clientes</span>
+              </div>
+              <div className="channel-feat">
+                <div className="channel-feat-dot"></div>
+                <span>Asistente inteligente que atiende y gestiona reservas</span>
+              </div>
+              <div className="channel-feat">
+                <div className="channel-feat-dot"></div>
+                <span>Muestra catálogo, precios y disponibilidad al instante</span>
+              </div>
+              <div className="channel-feat">
+                <div className="channel-feat-dot"></div>
+                <span>Seguimiento completo desde tu panel de chats</span>
+              </div>
+            </div>
+            <span className="channel-badge">Disponible</span>
+          </div>
         </div>
         <div className="channels-note">
-          Todo lo que configures en <strong>Viaia Flow</strong> — descripción, precios, reglas, productos — es lo que Viaia usa para responder en <strong>WhatsApp</strong> e <strong>Instagram</strong>. Configuras una vez, funciona en todos tus canales.
+          Todo lo que configures en <strong>Viaia Flow</strong> — descripción, precios, reglas, productos — es lo que Viaia usa para responder en <strong>WhatsApp</strong>, <strong>Instagram</strong> y tu <strong>Canal Web</strong>. Configuras una vez, funciona en todos tus canales.
         </div>
       </div>
 
